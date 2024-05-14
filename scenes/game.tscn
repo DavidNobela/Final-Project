@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://bxq5hgqvtfoys"]
+[gd_scene load_steps=12 format=3 uid="uid://bxq5hgqvtfoys"]
 
 [ext_resource type="PackedScene" uid="uid://bfobhk2hspfpe" path="res://scenes/player.tscn" id="1_lra1e"]
 [ext_resource type="Texture2D" uid="uid://cmsbeavp5fjir" path="res://assets/sprites/world_tileset.png" id="2_a507c"]
-[ext_resource type="PackedScene" uid="uid://bst7sho0phj05" path="res://scenes/platform.tscn" id="3_wol6x"]
-[ext_resource type="PackedScene" uid="uid://ddl6s5mda6e8y" path="res://scenes/coin.tscn" id="4_pnx0n"]
+[ext_resource type="PackedScene" path="res://scenes/platform.tscn" id="3_wol6x"]
+[ext_resource type="PackedScene" path="res://scenes/coin.tscn" id="4_pnx0n"]
+[ext_resource type="PackedScene" uid="uid://cttknhmlf1j8h" path="res://Killzone.tscn" id="5_ojhh4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ftdst"]
 texture = ExtResource("2_a507c")
@@ -407,6 +408,21 @@ texture = ExtResource("2_a507c")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_ftdst")
 
+[sub_resource type="Animation" id="Animation_me25y"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1075, -619)]
+}
+
 [sub_resource type="Animation" id="Animation_maml2"]
 resource_name = "move"
 length = 1.5
@@ -424,26 +440,14 @@ tracks/0/keys = {
 "values": [Vector2(1075, -619), Vector2(1217, -620)]
 }
 
-[sub_resource type="Animation" id="Animation_me25y"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1075, -619)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_y0dpx"]
 _data = {
 "RESET": SubResource("Animation_me25y"),
 "move": SubResource("Animation_maml2")
 }
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_f5rqg"]
+distance = -302.0
 
 [node name="Game" type="Node2D"]
 
@@ -458,6 +462,7 @@ position = Vector2(59, 48)
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -6)
 zoom = Vector2(4, 4)
+limit_bottom = 635
 position_smoothing_enabled = true
 
 [node name="Platform" parent="." instance=ExtResource("3_wol6x")]
@@ -477,3 +482,10 @@ position = Vector2(135, -24)
 
 [node name="coin2" parent="." instance=ExtResource("4_pnx0n")]
 position = Vector2(120, -342)
+
+[node name="Killzone" parent="." instance=ExtResource("5_ojhh4")]
+position = Vector2(59, 42)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(184, 225)
+shape = SubResource("WorldBoundaryShape2D_f5rqg")
