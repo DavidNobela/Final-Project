@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bxq5hgqvtfoys"]
+[gd_scene load_steps=17 format=3 uid="uid://bxq5hgqvtfoys"]
 
 [ext_resource type="PackedScene" uid="uid://bfobhk2hspfpe" path="res://scenes/player.tscn" id="1_lra1e"]
 [ext_resource type="Texture2D" uid="uid://cmsbeavp5fjir" path="res://assets/sprites/world_tileset.png" id="2_a507c"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" path="res://scenes/coin.tscn" id="4_pnx0n"]
 [ext_resource type="PackedScene" uid="uid://cttknhmlf1j8h" path="res://Killzone.tscn" id="5_ojhh4"]
 [ext_resource type="PackedScene" path="res://scenes/slime.tscn" id="6_nik5e"]
+[ext_resource type="FontFile" uid="uid://ciw1xyop6r7lp" path="res://assets/fonts/PixelOperator8.ttf" id="7_5c6b1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ftdst"]
 texture = ExtResource("2_a507c")
@@ -545,8 +546,21 @@ libraries = {
 }
 autoplay = "move"
 
-[node name="Slime" parent="." instance=ExtResource("6_nik5e")]
+[node name="Text" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="Text"]
+offset_left = -79.0
+offset_top = -29.0
+offset_right = 30.0
+offset_bottom = -6.0
+theme_override_fonts/font = ExtResource("7_5c6b1")
+theme_override_font_sizes/font_size = 8
+text = "space to jump"
+
+[node name="Slimes" type="Node" parent="."]
+
+[node name="Slime" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(73, 177)
 
-[node name="Slime2" parent="." instance=ExtResource("6_nik5e")]
+[node name="Slime2" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(472, -159)
