@@ -3,10 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://bfobhk2hspfpe" path="res://scenes/player.tscn" id="1_lra1e"]
 [ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_ncp06"]
 [ext_resource type="Texture2D" uid="uid://cmsbeavp5fjir" path="res://assets/sprites/world_tileset.png" id="2_a507c"]
-[ext_resource type="PackedScene" path="res://scenes/platform.tscn" id="3_wol6x"]
+[ext_resource type="PackedScene" uid="uid://bst7sho0phj05" path="res://scenes/platform.tscn" id="3_wol6x"]
 [ext_resource type="PackedScene" uid="uid://vu85ugjldhp2" path="res://scenes/coin.tscn" id="4_pnx0n"]
 [ext_resource type="PackedScene" uid="uid://cttknhmlf1j8h" path="res://Killzone.tscn" id="5_ojhh4"]
-[ext_resource type="PackedScene" path="res://scenes/slime.tscn" id="6_nik5e"]
+[ext_resource type="PackedScene" uid="uid://dwf87xdin7afj" path="res://scenes/slime.tscn" id="6_nik5e"]
 [ext_resource type="FontFile" uid="uid://ciw1xyop6r7lp" path="res://assets/fonts/PixelOperator8.ttf" id="7_5c6b1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ftdst"]
@@ -594,47 +594,47 @@ position = Vector2(1608, -463)
 [node name="Slime10" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(1880, -479)
 
-[node name="Slime" parent="." instance=ExtResource("6_nik5e")]
+[node name="Slime11" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(2120, -366)
 
-[node name="Slime2" parent="." instance=ExtResource("6_nik5e")]
+[node name="Slime12" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(1928, -479)
 
-[node name="Slime3" parent="." instance=ExtResource("6_nik5e")]
+[node name="Slime13" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(1113, -479)
 
-[node name="Slime4" parent="." instance=ExtResource("6_nik5e")]
+[node name="Slime14" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(1202, -479)
 
-[node name="Slime5" parent="." instance=ExtResource("6_nik5e")]
+[node name="Slime15" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(1649, -463)
 
-[node name="Slime6" parent="." instance=ExtResource("6_nik5e")]
+[node name="Slime16" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(2211, -367)
 
-[node name="Slime7" parent="." instance=ExtResource("6_nik5e")]
+[node name="Slime17" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(2297, -368)
 
-[node name="Slime8" parent="." instance=ExtResource("6_nik5e")]
+[node name="Slime18" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(2170, -368)
 
-[node name="Slime9" parent="." instance=ExtResource("6_nik5e")]
+[node name="Slime19" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(1368, 322)
 
-[node name="Slime10" parent="." instance=ExtResource("6_nik5e")]
+[node name="Slime20" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(49, 177)
 
-[node name="Slime11" parent="." instance=ExtResource("6_nik5e")]
+[node name="Slime21" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(200, -256)
 
-[node name="Slime12" parent="." instance=ExtResource("6_nik5e")]
+[node name="Slime22" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(616, -368)
 
-[node name="Slime13" parent="." instance=ExtResource("6_nik5e")]
+[node name="Slime23" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(728, -432)
 
-[node name="Slime14" parent="." instance=ExtResource("6_nik5e")]
+[node name="Slime24" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(1431, -367)
 
-[node name="Slime15" parent="." instance=ExtResource("6_nik5e")]
+[node name="Slime25" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(1816, -48)
