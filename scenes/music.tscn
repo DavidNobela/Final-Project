@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://u5dblm6r7as"]
+
+[ext_resource type="AudioStream" uid="uid://bahhbf76pgw77" path="res://assets/music/679738__seth_makes_sounds__calming-piano-loop-60bpm.wav" id="1_xvdvt"]
+
+[node name="Music" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_xvdvt")
+autoplay = true
+bus = &"Music"

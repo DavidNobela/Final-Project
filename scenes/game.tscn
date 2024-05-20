@@ -2,6 +2,16 @@
 
 [ext_resource type="PackedScene" uid="uid://bfobhk2hspfpe" path="res://scenes/player.tscn" id="1_lra1e"]
 [ext_resource type="Texture2D" uid="uid://cmsbeavp5fjir" path="res://assets/sprites/world_tileset.png" id="2_a507c"]
+<<<<<<< Updated upstream
+=======
+[ext_resource type="PackedScene" uid="uid://bst7sho0phj05" path="res://scenes/platform.tscn" id="3_wol6x"]
+[ext_resource type="PackedScene" uid="uid://vu85ugjldhp2" path="res://scenes/coin.tscn" id="4_pnx0n"]
+[ext_resource type="PackedScene" uid="uid://cttknhmlf1j8h" path="res://Killzone.tscn" id="5_ojhh4"]
+[ext_resource type="PackedScene" uid="uid://dwf87xdin7afj" path="res://scenes/slime.tscn" id="6_nik5e"]
+[ext_resource type="FontFile" uid="uid://ciw1xyop6r7lp" path="res://assets/fonts/PixelOperator8.ttf" id="7_5c6b1"]
+[ext_resource type="FontFile" uid="uid://baq17pyoo4crf" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="8_857a2"]
+[ext_resource type="PackedScene" uid="uid://u5dblm6r7as" path="res://scenes/music.tscn" id="10_xiyex"]
+>>>>>>> Stashed changes
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ftdst"]
 texture = ExtResource("2_a507c")
