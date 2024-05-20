@@ -29,7 +29,7 @@ func _physics_process(delta):
 		
 	if is_on_floor():
 		if direction == 0:
-			animated_sprite.play("Idle")
+			animated_sprite.play("idle")
 		else:
 			animated_sprite.play("Run")
 	else:

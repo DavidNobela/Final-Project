@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://daidgiaro075p"]
+[gd_scene load_steps=2 format=3 uid="uid://c3cg6jhjglbfx"]
 
-[ext_resource type="AudioStream" uid="uid://bx7swfvioo6gd" path="res://assets/music/time_for_adventure.mp3" id="1_syl5v"]
+[ext_resource type="AudioStream" uid="uid://p82u8h5rwhh8" path="res://assets/music/679738__seth_makes_sounds__calming-piano-loop-60bpm.wav" id="1_ygwqe"]
 
 [node name="Music" type="AudioStreamPlayer2D"]
-stream = ExtResource("1_syl5v")
+stream = ExtResource("1_ygwqe")
 autoplay = true
 bus = &"Music"
