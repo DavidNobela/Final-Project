@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cttknhmlf1j8h"]
+[gd_scene load_steps=3 format=3 uid="uid://cttknhmlf1j8h"]
 
 [ext_resource type="Script" path="res://scripts/Killzone.gd" id="1_jou8k"]
+[ext_resource type="AudioStream" uid="uid://4od0n4g5kdyw" path="res://assets/sounds/Wilhelm Scream.wav" id="2_cx5p5"]
 
 [node name="Killzone" type="Area2D"]
 collision_mask = 2
@@ -9,6 +10,9 @@ script = ExtResource("1_jou8k")
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.6
 one_shot = true
+
+[node name="DeathSoundPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_cx5p5")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
