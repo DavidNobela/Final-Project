@@ -1,7 +1,8 @@
-[gd_scene load_steps=26 format=3 uid="uid://bfobhk2hspfpe"]
+[gd_scene load_steps=27 format=3 uid="uid://bfobhk2hspfpe"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_dbk78"]
 [ext_resource type="Texture2D" uid="uid://blmh7bhyeijte" path="res://assets/sprites/knight.png" id="1_jbsop"]
+[ext_resource type="AudioStream" uid="uid://gbx30gqqxhra" path="res://assets/sounds/Mario Jump Sound Effect.mp3" id="3_kl4ou"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xqek1"]
 atlas = ExtResource("1_jbsop")
@@ -186,3 +187,7 @@ frame_progress = 0.368698
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_5pa1q")
+
+[node name="sfx_jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_kl4ou")
+volume_db = -16.0
