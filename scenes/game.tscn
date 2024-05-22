@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://bxq5hgqvtfoys"]
+[gd_scene load_steps=19 format=3 uid="uid://bxq5hgqvtfoys"]
 
 [ext_resource type="PackedScene" uid="uid://bfobhk2hspfpe" path="res://scenes/player.tscn" id="1_lra1e"]
 [ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_ncp06"]
@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://dwf87xdin7afj" path="res://scenes/slime.tscn" id="6_nik5e"]
 [ext_resource type="FontFile" uid="uid://ciw1xyop6r7lp" path="res://assets/fonts/PixelOperator8.ttf" id="7_5c6b1"]
 [ext_resource type="FontFile" uid="uid://baq17pyoo4crf" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="8_857a2"]
-[ext_resource type="PackedScene" uid="uid://c3cg6jhjglbfx" path="res://scenes/music.tscn" id="10_xiyex"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ftdst"]
 texture = ExtResource("2_a507c")
@@ -824,5 +823,3 @@ position = Vector2(2040, 97)
 
 [node name="Slime32" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(1112, -242)
-
-[node name="Music" parent="." instance=ExtResource("10_xiyex")]

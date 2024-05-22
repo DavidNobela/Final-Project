@@ -1,8 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c3cg6jhjglbfx"]
+[gd_scene load_steps=2 format=3 uid="uid://dcgdp0ui4w4y"]
 
-[ext_resource type="AudioStream" uid="uid://p82u8h5rwhh8" path="res://assets/music/679738__seth_makes_sounds__calming-piano-loop-60bpm.wav" id="1_ygwqe"]
+[ext_resource type="AudioStream" uid="uid://c6306cus8f411" path="res://assets/music/Base De Rap  Mood  Chill Hip Hop Instrumental  Prod. Slowet Beats.mp3" id="1_0u1rj"]
 
 [node name="Music" type="AudioStreamPlayer2D"]
-stream = ExtResource("1_ygwqe")
+stream = ExtResource("1_0u1rj")
 autoplay = true
-bus = &"Music"
