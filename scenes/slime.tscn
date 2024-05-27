@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bg6oaig1esl6t" path="res://assets/sprites/slime_green.png" id="1_dbk4r"]
 [ext_resource type="Script" path="res://scripts/slime.gd" id="1_fkp60"]
-[ext_resource type="PackedScene" path="res://Killzone.tscn" id="2_m76nm"]
+[ext_resource type="PackedScene" uid="uid://cttknhmlf1j8h" path="res://scenes/Killzone.tscn" id="2_m76nm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3clqr"]
 atlas = ExtResource("1_dbk4r")
