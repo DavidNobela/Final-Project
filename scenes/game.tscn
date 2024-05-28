@@ -537,22 +537,22 @@ shape = SubResource("WorldBoundaryShape2D_f5rqg")
 [node name="Coins" type="Node" parent="."]
 
 [node name="coin" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(136, -55)
+position = Vector2(147, -56)
 
 [node name="coin2" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(120, -342)
+position = Vector2(132, -343)
 
 [node name="coin3" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(392, 246)
+position = Vector2(402, 246)
 
 [node name="coin4" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(519, 168)
+position = Vector2(531, 166)
 
 [node name="coin5" parent="Coins" instance=ExtResource("4_pnx0n")]
 position = Vector2(597, 296)
 
 [node name="coin6" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(680, 216)
+position = Vector2(693, 214)
 
 [node name="coin7" parent="Coins" instance=ExtResource("4_pnx0n")]
 position = Vector2(971, 312)
@@ -564,16 +564,16 @@ position = Vector2(1140, 41)
 position = Vector2(1046, -151)
 
 [node name="coin10" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(734, -202)
+position = Vector2(746, -205)
 
 [node name="coin11" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(792, -328)
+position = Vector2(803, -328)
 
 [node name="coin12" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(937, -230)
+position = Vector2(946, -231)
 
 [node name="coin13" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(1146, -279)
+position = Vector2(1168, -280)
 
 [node name="coin14" parent="Coins" instance=ExtResource("4_pnx0n")]
 position = Vector2(1319, -248)
@@ -582,55 +582,55 @@ position = Vector2(1319, -248)
 position = Vector2(1402, -10)
 
 [node name="coin16" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(2087, 71)
+position = Vector2(2100, 72)
 
 [node name="coin17" parent="Coins" instance=ExtResource("4_pnx0n")]
 position = Vector2(248, 42)
 
 [node name="coin18" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(377, -54)
+position = Vector2(387, -55)
 
 [node name="coin19" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(599, -133)
+position = Vector2(612, -135)
 
 [node name="coin20" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(473, -136)
+position = Vector2(484, -139)
 
 [node name="coin21" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(381, -286)
+position = Vector2(385, -286)
 
 [node name="coin22" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(231, -329)
+position = Vector2(242, -332)
 
 [node name="coin23" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(326, -375)
+position = Vector2(338, -375)
 
 [node name="coin24" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(625, -428)
+position = Vector2(637, -441)
 
 [node name="coin25" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(849, -571)
+position = Vector2(856, -635)
 
 [node name="coin26" parent="Coins" instance=ExtResource("4_pnx0n")]
 position = Vector2(1136, -670)
 
 [node name="coin27" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(1673, -584)
+position = Vector2(1680, -584)
 
 [node name="coin28" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(1959, -487)
+position = Vector2(1966, -487)
 
 [node name="coin29" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(1768, -487)
+position = Vector2(1780, -487)
 
 [node name="coin30" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(1576, -489)
+position = Vector2(1586, -490)
 
 [node name="coin31" parent="Coins" instance=ExtResource("4_pnx0n")]
 position = Vector2(1833, -126)
 
 [node name="coin32" parent="Coins" instance=ExtResource("4_pnx0n")]
-position = Vector2(2406, -138)
+position = Vector2(2417, -138)
 
 [node name="Platforms" type="Node" parent="."]
 
@@ -668,9 +668,9 @@ theme_override_font_sizes/font_size = 8
 text = "space to jump"
 
 [node name="Label2" type="Label" parent="Text"]
-offset_left = 86.0
+offset_left = 98.0
 offset_top = 65.0
-offset_right = 194.0
+offset_right = 206.0
 offset_bottom = 116.0
 theme_override_colors/font_color = Color(0.160784, 0.309804, 0.72549, 1)
 theme_override_fonts/font = ExtResource("7_5c6b1")
@@ -679,10 +679,10 @@ text = "there's more
 coins down here"
 
 [node name="Label3" type="Label" parent="Text"]
-offset_left = 215.0
-offset_top = 453.0
-offset_right = 303.0
-offset_bottom = 485.0
+offset_left = 227.0
+offset_top = 457.0
+offset_right = 315.0
+offset_bottom = 489.0
 theme_override_colors/font_color = Color(0.160784, 0.309804, 0.72549, 1)
 theme_override_fonts/font = ExtResource("8_857a2")
 theme_override_font_sizes/font_size = 24
@@ -736,7 +736,7 @@ position = Vector2(73, 177)
 position = Vector2(472, -159)
 
 [node name="Slime3" parent="Slimes" instance=ExtResource("6_nik5e")]
-position = Vector2(1333, 321)
+position = Vector2(1349, 320)
 
 [node name="Slime4" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(711, -111)
@@ -745,22 +745,22 @@ position = Vector2(711, -111)
 position = Vector2(536, -94)
 
 [node name="Slime6" parent="Slimes" instance=ExtResource("6_nik5e")]
-position = Vector2(392, -351)
+position = Vector2(403, -353)
 
 [node name="Slime7" parent="Slimes" instance=ExtResource("6_nik5e")]
-position = Vector2(1064, -481)
+position = Vector2(1074, -481)
 
 [node name="Slime8" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(1160, -480)
 
 [node name="Slime9" parent="Slimes" instance=ExtResource("6_nik5e")]
-position = Vector2(1608, -463)
+position = Vector2(1617, -463)
 
 [node name="Slime10" parent="Slimes" instance=ExtResource("6_nik5e")]
-position = Vector2(1881, -464)
+position = Vector2(1889, -464)
 
 [node name="Slime11" parent="Slimes" instance=ExtResource("6_nik5e")]
-position = Vector2(2120, -366)
+position = Vector2(2133, -369)
 
 [node name="Slime12" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(1929, -464)
@@ -790,31 +790,31 @@ position = Vector2(1368, 322)
 position = Vector2(49, 177)
 
 [node name="Slime21" parent="Slimes" instance=ExtResource("6_nik5e")]
-position = Vector2(216, -256)
+position = Vector2(226, -257)
 
 [node name="Slime22" parent="Slimes" instance=ExtResource("6_nik5e")]
-position = Vector2(616, -368)
+position = Vector2(626, -370)
 
 [node name="Slime23" parent="Slimes" instance=ExtResource("6_nik5e")]
-position = Vector2(728, -432)
+position = Vector2(738, -432)
 
 [node name="Slime24" parent="Slimes" instance=ExtResource("6_nik5e")]
-position = Vector2(1431, -367)
+position = Vector2(1442, -369)
 
 [node name="Slime25" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(1816, -48)
 
 [node name="Slime26" parent="Slimes" instance=ExtResource("6_nik5e")]
-position = Vector2(136, 369)
+position = Vector2(147, 367)
 
 [node name="Slime27" parent="Slimes" instance=ExtResource("6_nik5e")]
-position = Vector2(216, 513)
+position = Vector2(229, 512)
 
 [node name="Slime28" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(280, 513)
 
 [node name="Slime29" parent="Slimes" instance=ExtResource("6_nik5e")]
-position = Vector2(1944, 96)
+position = Vector2(1954, 96)
 
 [node name="Slime30" parent="Slimes" instance=ExtResource("6_nik5e")]
 position = Vector2(1991, 97)
@@ -826,7 +826,7 @@ position = Vector2(2040, 97)
 position = Vector2(1112, -242)
 
 [node name="Slime33" parent="Slimes" instance=ExtResource("6_nik5e")]
-position = Vector2(360, -191)
+position = Vector2(371, -195)
 
 [node name="Slime" parent="." instance=ExtResource("6_nik5e")]
-position = Vector2(1479, -495)
+position = Vector2(1490, -496)

@@ -1,16 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://bl51h3ssfc3qq"]
+[gd_scene load_steps=3 format=3 uid="uid://dvpxt7ey0e3i8"]
 
 [ext_resource type="Script" path="res://scripts/start_menu.gd" id="1_trpa4"]
 [ext_resource type="Texture2D" uid="uid://bphl2slvulliw" path="res://assets/pngtree-landscape-with-mountains-forest-and-clouds-2d-game-background-image_13246432.jpg" id="2_018nn"]
 
 [node name="StartMenu" type="CenterContainer"]
-offset_right = 1152.0
-offset_bottom = 632.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_trpa4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(528, 318)
-scale = Vector2(2.7304, 2.58978)
+position = Vector2(578, 324.291)
+scale = Vector2(2.50972, 2.49776)
 texture = ExtResource("2_018nn")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]

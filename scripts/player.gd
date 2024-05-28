@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 130.0
+const SPEED = 100.0
 const JUMP_VELOCITY = -400.0
 @onready var sfx_jump = $sfx_jump
 
