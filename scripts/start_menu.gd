@@ -8,7 +8,9 @@ func  _ready():
 	pass
 
 func _on_start_game_button_pressed():
+	await  Transition.fade_to_black()
 	get_tree().change_scene_to_file("res://scenes/game.tscn")
+	Transition.fade_from_black()
 
 
 func _on_quit_button_pressed():
