@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://bl51h3ssfc3qq"]
+
+[ext_resource type="Script" path="res://scripts/start_menu.gd" id="1_trpa4"]
+[ext_resource type="Texture2D" uid="uid://bphl2slvulliw" path="res://assets/pngtree-landscape-with-mountains-forest-and-clouds-2d-game-background-image_13246432.jpg" id="2_018nn"]
+
+[node name="StartMenu" type="CenterContainer"]
+offset_right = 1152.0
+offset_bottom = 632.0
+script = ExtResource("1_trpa4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(528, 318)
+scale = Vector2(2.7304, 2.58978)
+texture = ExtResource("2_018nn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="StartGameButton" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Start Game"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/StartGameButton" to="." method="_on_start_game_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
