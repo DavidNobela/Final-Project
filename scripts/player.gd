@@ -13,33 +13,25 @@ var max_jumps = 2
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var coyote_timer = $CoyoteTimer
 
+
 func _physics_process(delta):
-	# Add the gravity.
 	if not is_on_floor():
+		# Add the gravity.
 		velocity.y += gravity * delta
 		
-		if is_on_floor():
-			jump_count = 0
-		#timer needed 
-		#deleted parts:
-		#if velocity.y>0:
-			#velocity.y -= Jump_gravity * delta
-		#else: 
-			#velocity.y -= Fall_Gravity * delta
+		if coyote_timer.is_stopped() and jump_count == 0:
+			coyote_timer.start(0.2)
 		
 	else:
+		coyote_timer.stop()
+		jump_count = 0
 		Jump_Avalible = true
-		
 
 
 	# Handle jump.
-	if Input.is_action_just_pressed("Jump") and jump_count < max_jumps:
+	if Input.is_action_just_pressed("Jump") and Jump_Avalible and jump_count < max_jumps:
 		velocity.y = JUMP_VELOCITY
 		jump_count += 1
-	
-	if Input.is_action_pressed("Jump") and Jump_Avalible:
-		velocity.y = JUMP_VELOCITY
-		Jump_Avalible = false
 	
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
