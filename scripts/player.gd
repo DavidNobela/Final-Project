@@ -90,6 +90,7 @@ var Jump_Avalible: bool = true
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var jump_count = 0
 var max_jumps = 2
+@onready var label_8 = $"../Text/Label8"
 
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var coyote_timer = $CoyoteTimer
@@ -102,6 +103,10 @@ func _physics_process(delta):
 			var collided_tile = collision.get_collider()
 			if collided_tile is TileMap:
 				var tile_position = tilemap.local_to_map(collision.get_position())
+				if tile_position[1] == -29 and 145 < tile_position[0] and tile_position[0] < 153:
+					label_8.visible = true
+				else:
+					label_8.visible = false
 				var tile_data = tilemap.get_cell_source_id(0, tile_position)
 				if tile_data != -1:
 					var atlas_coords = tilemap.get_cell_atlas_coords(1, tile_position)
