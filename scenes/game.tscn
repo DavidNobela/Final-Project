@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dwf87xdin7afj" path="res://scenes/slime.tscn" id="6_nik5e"]
 [ext_resource type="FontFile" uid="uid://ciw1xyop6r7lp" path="res://assets/fonts/PixelOperator8.ttf" id="7_5c6b1"]
 [ext_resource type="FontFile" uid="uid://baq17pyoo4crf" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="8_857a2"]
-[ext_resource type="PackedScene" path="res://scenes/inverted_one_way_platform.tscn" id="8_p13ux"]
+[ext_resource type="PackedScene" uid="uid://b83s4uxk4s6df" path="res://scenes/inverted_one_way_platform.tscn" id="8_p13ux"]
 [ext_resource type="PackedScene" uid="uid://daidgiaro075p" path="res://scenes/music.tscn" id="10_xiyex"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ftdst"]
