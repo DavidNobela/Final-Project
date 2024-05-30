@@ -734,11 +734,15 @@ theme_override_font_sizes/font_size = 8
 text = "You made it!"
 
 [node name="Label8" type="Label" parent="Text"]
-offset_left = 2219.0
-offset_top = -527.0
-offset_right = 2473.0
-offset_bottom = -483.0
-text = "seems like you need more coins?"
+offset_left = 2299.0
+offset_top = -512.0
+offset_right = 2389.0
+offset_bottom = -480.0
+theme_override_colors/font_color = Color(0.894118, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "seems like you 
+need more coins?"
 
 [node name="Slimes" type="Node" parent="."]
 
