@@ -1,7 +1,14 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=3 format=3 uid="uid://bl51h3ssfc3qq"]
 
 [ext_resource type="Script" path="res://scripts/start_menu.gd" id="1_trpa4"]
 [ext_resource type="Texture2D" uid="uid://bphl2slvulliw" path="res://assets/pngtree-landscape-with-mountains-forest-and-clouds-2d-game-background-image_13246432.jpg" id="2_018nn"]
+=======
+[gd_scene load_steps=3 format=3 uid="uid://bfy2krkbrik46"]
+
+[ext_resource type="Script" path="res://scripts/start_menu.gd" id="1_trpa4"]
+[ext_resource type="Texture2D" path="res://assets/pngtree-landscape-with-mountains-forest-and-clouds-2d-game-background-image_13246432.jpg" id="2_018nn"]
+>>>>>>> Stashed changes
 
 [node name="StartMenu" type="CenterContainer"]
 offset_right = 1152.0
@@ -9,7 +16,7 @@ offset_bottom = 632.0
 script = ExtResource("1_trpa4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(528, 318)
+position = Vector2(624, 314)
 scale = Vector2(2.7304, 2.58978)
 texture = ExtResource("2_018nn")
 
