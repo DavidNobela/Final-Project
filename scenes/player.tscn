@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_dbk78"]
 [ext_resource type="Texture2D" uid="uid://blmh7bhyeijte" path="res://assets/sprites/knight.png" id="1_jbsop"]
-[ext_resource type="AudioStream" uid="uid://gbx30gqqxhra" path="res://assets/sounds/Mario Jump Sound Effect.mp3" id="3_kl4ou"]
+[ext_resource type="AudioStream" path="res://assets/sounds/Mario Jump Sound Effect.mp3" id="3_kl4ou"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xqek1"]
 atlas = ExtResource("1_jbsop")
