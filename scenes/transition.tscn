@@ -1,6 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cojy6n07e71cu"]
+[gd_scene load_steps=8 format=3 uid="uid://cojy6n07e71cu"]
 
 [ext_resource type="Script" path="res://scripts/transition.gd" id="1_net6k"]
+
+[sub_resource type="Animation" id="Animation_i2h8p"]
+resource_name = "Fade from black"
+length = 0.5
 
 [sub_resource type="Animation" id="Animation_p1gqw"]
 resource_name = "Fade to black"
@@ -33,8 +37,8 @@ tracks/0/keys = {
 "values": [Color(0, 0, 0, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_i2h8p"]
-resource_name = "Fade from black"
+[sub_resource type="Animation" id="Animation_2cm3u"]
+resource_name = "fade_from_black"
 length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -49,11 +53,29 @@ tracks/0/keys = {
 "values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
 }
 
+[sub_resource type="Animation" id="Animation_l3a2f"]
+resource_name = "fade_to_black"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_04lut"]
 _data = {
 "Fade from black": SubResource("Animation_i2h8p"),
 "Fade to black": SubResource("Animation_p1gqw"),
-"RESET": SubResource("Animation_buost")
+"RESET": SubResource("Animation_buost"),
+"fade_from_black": SubResource("Animation_2cm3u"),
+"fade_to_black": SubResource("Animation_l3a2f")
 }
 
 [node name="Transition" type="Node"]

@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dg1rl4q2b8m2n"]
+[gd_scene load_steps=2 format=3 uid="uid://dg1rl4q2b8m2n"]
 
 [ext_resource type="Script" path="res://scripts/start_menu.gd" id="1_jnywk"]
-[ext_resource type="Texture2D" uid="uid://n1as7vqbc77k" path="res://assets/sprites/360_F_621585347_GATWJ061PptsBJqhGpSi6KWIFsxnYnCb.jpg" id="2_ho0bh"]
 
 [node name="StartMenu" type="CenterContainer"]
 anchors_preset = 15
@@ -12,11 +11,6 @@ grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("1_jnywk")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(960.375, 591)
-scale = Vector2(3.5476, 3.29444)
-texture = ExtResource("2_ho0bh")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
